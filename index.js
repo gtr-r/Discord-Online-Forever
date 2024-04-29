@@ -7,5 +7,6 @@ const bot = new Eris(process.env.token);
 bot.on("error", (err) => {
   console.error(err); // or your preferred logger
 });
+bot.editStatus("idle", { name: "Do Not Disturb", type: 0 });
 
 bot.connect(); // Get the bot to connect to Discord
